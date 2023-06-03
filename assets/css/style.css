@@ -14,6 +14,11 @@ ul > li {
   padding-right: 15px;
 }
 
+h1 > a {
+  text-decoration: none;
+  color: #6070ff;
+}
+
 ul > li > a {
   text-decoration: none;
   width: 62px;
@@ -79,7 +84,7 @@ header {
   color: #344563;
 }
 
-.div-connect > p {
+.div-connect > h4 {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-size: 16px;
@@ -171,7 +176,7 @@ header {
     width: 60%;
   }
 
-  .div-connect > p {
+  .div-connect > h4 {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-size: 16px;
