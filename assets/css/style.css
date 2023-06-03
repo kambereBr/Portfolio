@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-section {
+.main-section {
   display: flex;
   flex-direction: column;
   background-image: url("../images/header-shapes\ mobile.svg");
