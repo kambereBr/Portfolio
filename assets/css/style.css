@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+body {
+  background-color: #fbf8f8;
+}
+
 .main-section {
   display: flex;
   flex-direction: column;
@@ -117,6 +121,188 @@ header {
 .btn:hover {
   width: 150%;
   height: 150%;
+}
+
+.product-categories {
+  display: flex;
+  column-gap: 8px;
+}
+
+.div-works > ul {
+  display: flex;
+  column-gap: 8px;
+  padding: 0;
+}
+
+.div-works>ul>li {
+  padding: 0;
+  font-size: 13px;
+  color: #7a869a;
+  font-weight: bold;
+}
+
+.button-category {
+  border: none;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  color: #6070FF;
+  background-color: #EBEBFF;
+}
+
+.li-color {
+  color: #344563;
+}
+
+.div-works {
+  /* display: flex;
+  flex-direction: column; */
+  display: flex;
+    flex-direction: column;
+    width: 90%;
+    /* border: 3px solid; */
+    border-radius: 20px;
+    padding: 10px 10px 18px 10px;
+    box-shadow: 0px 1px 3px 1px #DFE1E6;
+    background-color: white;
+}
+
+.button-project, .button-get-resume {
+  border: 1px solid #396df2;
+  border-radius: 10px;
+  padding: 15px 10px;
+  font-size: 17px;
+  background: none;
+  color: #396df2;
+  font-weight: 500;
+  width: fit-content;
+}
+
+.works-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 100px;
+  background-color: #fbf8f8;
+  margin-bottom: 40px;
+}
+
+.about-my-self {
+  background-image: url(../images/Base\ about\ my\ self.svg);
+  background-size: 110%;
+  background-attachment: scroll;
+}
+
+.about-header {
+  height: 0px;
+}
+
+.div-description-about>h2 {
+  width: 327px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  color: #172b4d;
+  margin-top: 100px;
+}
+
+.languages {
+  font-size: 20px;
+}
+
+.li-categories > div {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+    align-items: baseline;
+    padding: 0;
+    margin: 0;
+    width: 300px;
+}
+
+.languages > ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  align-items: flex-start;
+}
+
+.languages>ul>li {
+  padding: 0;
+}
+.languages-items {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      background-color: #f7f7f9;
+      padding: 15px;
+      width: 95%;
+      border-radius: 10px;
+}
+
+.languages-items-li {
+  padding: 0;
+}
+
+.li-categories > ul {
+  padding: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url("../images/contact\ form\ shapes-mobile.png") 105% 5% no-repeat, url("../images/Contact\ me.png") no-repeat;
+  background-attachment: scroll;
+  
+}
+
+.form-contact {
+  display: flex;
+  flex-direction: column;
+  row-gap: 27px;
+  align-items: center;
+  width: 80%;
+}
+
+.head-contact {
+      padding-top: 70px;
+      font-family: 'Poppins', sans-serif;
+      font-style: normal;
+      font-size: 40px;
+      color: white;
+      text-align: center;
+          margin-bottom: 0;
+}
+
+.contactme > p {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  width: 80%;
+}
+
+.input-form {
+  border-radius: 7px;
+  width: 100%;
+  padding: 10px;
+  border-color: white;
+}
+
+.btn-submit {
+      border-radius: 10px;
+        padding: 15px 10px;
+        font-size: 17px;
+        background: white;
+        color: #396df2;
+        font-weight: 500;
+        border-color: white;
+        align-self: start;
 }
 
 @media screen and (min-width: 768px) {
