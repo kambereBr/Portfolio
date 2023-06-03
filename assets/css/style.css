@@ -156,7 +156,7 @@ header {
     margin-top: 100px;
   }
 
-  .div-description>p {
+  .div-description > p {
     width: 100%;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -179,9 +179,8 @@ header {
     color: #7f8cff;
   }
 
-  .div-connect{
+  .div-connect {
     margin: 0 auto;
     width: 60%;
   }
-
 }
