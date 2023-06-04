@@ -76,14 +76,6 @@ header {
   color: #344563;
 }
 
-.div-connect > h4 {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-size: 16px;
-  font-weight: bold;
-  color: #7f8cff;
-}
-
 .social-media-icons {
   display: flex;
   justify-content: flex-start;
@@ -157,17 +149,14 @@ header {
 }
 
 .div-works {
-  /* display: flex;
-  flex-direction: column; */
   display: flex;
   flex-direction: column;
   width: 80%;
-
-  /* border: 3px solid; */
   border-radius: 20px;
   padding: 10px 10px 18px 10px;
   box-shadow: 0 1px 3px 1px #dfe1e6;
   background-color: white;
+  place-self: center;
 }
 
 .button-project,
@@ -183,9 +172,10 @@ header {
 }
 
 .works-section {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: auto;
   align-items: center;
+  justify-content: end;
   row-gap: 100px;
   background-color: #fbf8f8;
   margin-bottom: 40px;
@@ -326,6 +316,56 @@ footer {
   margin-top: 100px;
 }
 
+.product-details {
+  color: #344563;
+}
+
+.button-project:enabled,
+.button-get-resume:hover {
+  background: #fff;
+  border: 1px solid #7f8cff;
+  border-radius: 8px;
+  color: #7f8cff;
+}
+
+.button-project:hover,
+.button-get-resume:hover {
+  background: #6070ff;
+  color: white;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  border-radius: 8px;
+}
+
+.button-project:active,
+.button-get-resume:active {
+  background: #2230d2;
+  color: white;
+  border-radius: 8px;
+}
+
+.button-project:disabled,
+.button-get-resume:disabled {
+  border: 1px solid #c1c7d0;
+  border-radius: 8px;
+}
+
+.product-title {
+  color: #091e42;
+}
+
+h4 {
+  font-family: 'Poppins', sans-serif;
+  color: #344563;
+}
+
+.div-connect > h4 {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: bold;
+  color: #7f8cff;
+}
+
 @media screen and (min-width: 768px) {
   .header-links-phone {
     display: none;
@@ -360,10 +400,6 @@ footer {
     justify-content: space-around;
   }
 
-  p {
-    font-family: 'Poppins', sans-serif;
-  }
-
   .div-description > p {
     width: 100%;
     font-family: 'Poppins', sans-serif;
@@ -377,18 +413,6 @@ footer {
   .div-description {
     margin: 0 auto;
     width: 60%;
-  }
-
-  h4 {
-    font-family: 'Poppins', sans-serif;
-  }
-
-  .div-connect > h4 {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-size: 16px;
-    font-weight: bold;
-    color: #7f8cff;
   }
 
   .div-connect {
@@ -432,6 +456,7 @@ footer {
 
   .about-text {
     width: 100%;
+    color: #344563;
   }
 
   .div-connect2 {
