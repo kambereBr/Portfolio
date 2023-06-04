@@ -281,6 +281,7 @@ footer {
 
 .contactme > p {
   color: white;
+  font-family: 'Poppins', sans-serif;
   font-size: 20px;
   text-align: center;
   width: 80%;
@@ -318,6 +319,7 @@ footer {
 
 .product-details {
   color: #344563;
+  font-family: 'Poppins', sans-serif;
 }
 
 .button-project:enabled,
@@ -364,6 +366,16 @@ h4 {
   font-size: 16px;
   font-weight: bold;
   color: #7f8cff;
+}
+
+.let-connect {
+  color: #7f8cff;
+}
+
+.about-text {
+  width: 100%;
+  color: #344563;
+  font-family: 'Poppins', sans-serif;
 }
 
 @media screen and (min-width: 768px) {
@@ -452,11 +464,6 @@ h4 {
 
   .div-description-about {
     width: 47%;
-  }
-
-  .about-text {
-    width: 100%;
-    color: #344563;
   }
 
   .div-connect2 {
