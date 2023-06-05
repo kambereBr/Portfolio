@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 body {
   background-color: #fbf8f8;
@@ -27,7 +27,7 @@ ul > li > a {
   text-decoration: none;
   width: 62px;
   height: 20px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -54,7 +54,7 @@ header {
   display: flex;
   width: 76px;
   height: 20px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -68,7 +68,7 @@ header {
 
 .div-description > p {
   width: 327px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -148,6 +148,10 @@ header {
   color: #344563;
 }
 
+.div-project {
+  float: left;
+}
+
 .div-works {
   display: flex;
   flex-direction: column;
@@ -194,12 +198,12 @@ header {
 h2,
 .input-form,
 .li-color {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .div-description-about > h2 {
   width: 327px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-size: 40px;
   display: flex;
@@ -257,7 +261,9 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url("../images/contact\ form\ shapes-mobile.png") 105% 5% no-repeat, url("../images/Contact\ me.png") no-repeat;
+  background: url("../images/contact\ form\ shapes-mobile.png") 105% 5%
+      no-repeat,
+    url("../images/Contact\ me.png") no-repeat;
   background-attachment: scroll;
 }
 
@@ -271,7 +277,7 @@ footer {
 
 .head-contact {
   padding-top: 70px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-size: 40px;
   color: white;
@@ -281,7 +287,7 @@ footer {
 
 .contactme > p {
   color: white;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 20px;
   text-align: center;
   width: 80%;
@@ -308,7 +314,7 @@ footer {
 .div-description > h2 {
   width: 100%;
   height: 122px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-size: 48px;
   display: flex;
@@ -319,7 +325,7 @@ footer {
 
 .product-details {
   color: #344563;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .button-project:enabled,
@@ -356,12 +362,12 @@ footer {
 }
 
 h4 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #344563;
 }
 
 .div-connect > h4 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-size: 16px;
   font-weight: bold;
@@ -375,7 +381,7 @@ h4 {
 .about-text {
   width: 100%;
   color: #344563;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 @media screen and (min-width: 768px) {
@@ -414,7 +420,7 @@ h4 {
 
   .div-description > p {
     width: 100%;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -503,7 +509,9 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: url(../images/contact\ form\ background\ shapes.svg) 105% 5% no-repeat, url(../images/contact\ form-\ background-shape-desktop.svg) no-repeat;
+    background: url(../images/contact\ form\ background\ shapes.svg) 105% 5%
+        no-repeat,
+      url(../images/contact\ form-\ background-shape-desktop.svg) no-repeat;
     background-attachment: scroll;
     padding-bottom: 60px;
   }
