@@ -95,6 +95,7 @@ header {
   column-gap: 0.8rem;
   max-width: 170px;
   padding: 0;
+  margin-top: 5px;
 }
 
 .product-categories > li {
@@ -134,8 +135,13 @@ header {
 }
 
 .article_text {
+  align-items: baseline;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
   width: 95%;
   margin: 0 auto;
+  height: 372px;
 }
 
 .article_img {
@@ -176,6 +182,7 @@ header {
   color: #396df2;
   font-weight: 500;
   width: fit-content;
+  margin-top: 10px;
 }
 
 .works-section {
@@ -213,6 +220,7 @@ h2,
   display: flex;
   align-items: center;
   color: #172b4d;
+  margin: 25px;
 }
 
 .languages {
@@ -336,7 +344,6 @@ textarea {
 
 .div-description > h2 {
   width: 100%;
-  height: 122px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-size: 48px;
@@ -395,6 +402,7 @@ h4 {
   font-size: 16px;
   font-weight: bold;
   color: #7f8cff;
+  margin-top: 10px;
 }
 
 .let-connect {
@@ -441,7 +449,6 @@ h4 {
     background-attachment: scroll;
     background-size: contain;
     padding: 24px;
-    height: 100vh;
     padding-bottom: 88px;
     border-bottom: #dfe1e6 1px solid;
     border-radius: 0 0 0 111px;
@@ -482,10 +489,13 @@ h4 {
     box-shadow: 0 1px 3px 1px #dfe1e6;
     background-color: white;
     column-gap: 15px;
+    justify-content: center;
+    justify-items: center;
   }
 
   .article_img {
     height: 372px;
+    width: 50%;
   }
 
   .div-works-reverse {
@@ -534,6 +544,7 @@ h4 {
     right: -50%;
     top: -361px;
     width: 100%;
+    margin-top: 50px;
   }
 
   .li-categories > div {
