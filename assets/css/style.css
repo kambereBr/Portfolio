@@ -1,7 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
   background-color: #fbf8f8;
+  overflow-x: hidden;
 }
 
 .main-section {
@@ -27,7 +34,7 @@ ul > li > a {
   text-decoration: none;
   width: 62px;
   height: 20px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -54,7 +61,7 @@ header {
   display: flex;
   width: 76px;
   height: 20px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -68,7 +75,7 @@ header {
 
 .div-description > p {
   width: 327px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -88,6 +95,7 @@ header {
   column-gap: 0.8rem;
   max-width: 170px;
   padding: 0;
+  margin-top: 5px;
 }
 
 .product-categories > li {
@@ -127,8 +135,13 @@ header {
 }
 
 .article_text {
+  align-items: baseline;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
   width: 95%;
   margin: 0 auto;
+  height: 372px;
 }
 
 .article_img {
@@ -169,6 +182,7 @@ header {
   color: #396df2;
   font-weight: 500;
   width: fit-content;
+  margin-top: 10px;
 }
 
 .works-section {
@@ -194,18 +208,19 @@ header {
 h2,
 .input-form,
 .li-color {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .div-description-about > h2 {
   width: 327px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-size: 40px;
+  line-height: 40px;
   display: flex;
   align-items: center;
   color: #172b4d;
-  margin-top: 100px;
+  margin: 25px;
 }
 
 .languages {
@@ -257,8 +272,10 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url("../images/contact\ form\ shapes-mobile.png") 105% 5% no-repeat, url("../images/Contact\ me.png") no-repeat;
+  background: url("../images/contact\ form\ shapes-mobile.png") no-repeat, url("../images/Contact\ me.png");
   background-attachment: scroll;
+  background-size: cover;
+  padding: 50px 0;
 }
 
 .form-contact {
@@ -266,12 +283,16 @@ footer {
   flex-direction: column;
   row-gap: 27px;
   align-items: center;
-  width: 35%;
+  justify-content: center;
+  width: 100%;
+}
+
+.form-contact > ul {
+  width: 100%;
 }
 
 .head-contact {
-  padding-top: 70px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-size: 40px;
   color: white;
@@ -281,7 +302,7 @@ footer {
 
 .contactme > p {
   color: white;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 20px;
   text-align: center;
   width: 80%;
@@ -289,9 +310,17 @@ footer {
 
 .input-form {
   border-radius: 7px;
-  width: 200%;
-  padding: 10px;
-  border-color: white;
+  width: 100%;
+  height: 48px;
+  margin: 5px 0;
+  outline: none;
+  border: 1px solid #cfd8dc;
+  padding-inline-start: 5px;
+}
+
+textarea {
+  height: 170px !important;
+  padding-top: 5px;
 }
 
 .btn-submit {
@@ -303,12 +332,19 @@ footer {
   font-weight: 500;
   border-color: white;
   align-self: start;
+  margin-top: 5px;
+}
+
+.btn-submit:hover {
+  background-color: #7f8cff;
+  color: white;
+  border: none;
+  outline: none;
 }
 
 .div-description > h2 {
   width: 100%;
-  height: 122px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-size: 48px;
   display: flex;
@@ -319,7 +355,7 @@ footer {
 
 .product-details {
   color: #344563;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .button-project:enabled,
@@ -356,16 +392,17 @@ footer {
 }
 
 h4 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #344563;
 }
 
 .div-connect > h4 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-size: 16px;
   font-weight: bold;
   color: #7f8cff;
+  margin-top: 10px;
 }
 
 .let-connect {
@@ -375,7 +412,19 @@ h4 {
 .about-text {
   width: 100%;
   color: #344563;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+.contactme {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+}
+
+.form-ul {
+  padding: 0;
+  margin: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -400,7 +449,6 @@ h4 {
     background-attachment: scroll;
     background-size: contain;
     padding: 24px;
-    height: 100vh;
     padding-bottom: 88px;
     border-bottom: #dfe1e6 1px solid;
     border-radius: 0 0 0 111px;
@@ -414,7 +462,7 @@ h4 {
 
   .div-description > p {
     width: 100%;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -441,10 +489,13 @@ h4 {
     box-shadow: 0 1px 3px 1px #dfe1e6;
     background-color: white;
     column-gap: 15px;
+    justify-content: center;
+    justify-items: center;
   }
 
   .article_img {
     height: 372px;
+    width: 50%;
   }
 
   .div-works-reverse {
@@ -493,6 +544,7 @@ h4 {
     right: -50%;
     top: -361px;
     width: 100%;
+    margin-top: 50px;
   }
 
   .li-categories > div {
@@ -503,8 +555,20 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: url(../images/contact\ form\ background\ shapes.svg) 105% 5% no-repeat, url(../images/contact\ form-\ background-shape-desktop.svg) no-repeat;
+    justify-content: center;
+    background: url(../images/contact\ form\ background\ shapes.svg) no-repeat;
+    background-color: #6070ff;
     background-attachment: scroll;
-    padding-bottom: 60px;
+    background-size: contain;
+    height: 100vh;
+    border-top-left-radius: 70px;
+  }
+
+  .contactme {
+    padding: 0 25vw;
+  }
+
+  .form-ul > li {
+    text-align: center;
   }
 }
