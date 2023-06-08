@@ -114,12 +114,16 @@ header {
   padding: 0;
 }
 
-.btn {
+.btn, .button-category {
   transition: all 1s ease-in-out;
 }
 
 .btn:hover {
   transform: scale(1.2);
+}
+
+.button-category:hover{
+  transform: scale(1.05);
 }
 
 .product-categories {
