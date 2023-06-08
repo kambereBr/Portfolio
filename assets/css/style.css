@@ -272,7 +272,8 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url("../images/contact\ form\ shapes-mobile.png") no-repeat, url("../images/Contact\ me.png");
+  background: url("../images/contact\ form\ shapes-mobile.png") no-repeat,
+    url("../images/Contact\ me.png");
   background-attachment: scroll;
   background-size: cover;
   padding: 50px 0;
@@ -356,6 +357,8 @@ textarea {
 .product-details {
   color: #344563;
   font-family: "Poppins", sans-serif;
+  width: 80%;
+  margin: 30px;
 }
 
 .button-project:enabled,
@@ -402,7 +405,7 @@ h4 {
   font-size: 16px;
   font-weight: bold;
   color: #7f8cff;
-  margin-top: 10px;
+  margin-top: 25px;
 }
 
 .let-connect {
@@ -410,9 +413,10 @@ h4 {
 }
 
 .about-text {
-  width: 100%;
+  width: 95%;
   color: #344563;
   font-family: "Poppins", sans-serif;
+  margin: 25px;
 }
 
 .contactme {
@@ -447,7 +451,7 @@ h4 {
     flex-direction: column;
     background: url(../images/Header-bg.svg) no-repeat;
     background-attachment: scroll;
-    background-size: contain;
+    background-size: 100%;
     padding: 24px;
     padding-bottom: 88px;
     border-bottom: #dfe1e6 1px solid;
@@ -515,6 +519,10 @@ h4 {
 
   .div-description-about {
     width: 47%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
   }
 
   .div-connect2 {
@@ -522,6 +530,7 @@ h4 {
     width: 60%;
     flex-direction: column;
     row-gap: 13px;
+    margin-left: 25px;
   }
 
   .div-connect2 > h4 {
@@ -544,7 +553,7 @@ h4 {
     right: -50%;
     top: -361px;
     width: 100%;
-    margin-top: 50px;
+    padding-left: 20px;
   }
 
   .li-categories > div {
@@ -570,5 +579,11 @@ h4 {
 
   .form-ul > li {
     text-align: center;
+  }
+
+  .languages-items-li {
+    width: 100px !important;
+    background-color: #f7f7f9;
+    border-radius: 10px;
   }
 }
