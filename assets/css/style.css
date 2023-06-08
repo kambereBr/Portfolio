@@ -115,12 +115,11 @@ header {
 }
 
 .btn {
-  transition: width 2s, height 2s;
+  transition: all 1s ease-in-out;
 }
 
 .btn:hover {
-  width: 150%;
-  height: 150%;
+  transform: scale(1.2);
 }
 
 .product-categories {
@@ -185,6 +184,7 @@ header {
   font-weight: 500;
   width: fit-content;
   margin-top: 10px;
+  transition: all 0.5s ease-in-out;
 }
 
 .works-section {
