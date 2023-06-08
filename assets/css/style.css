@@ -145,8 +145,15 @@ header {
 }
 
 .article_img {
-  width: 95%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   margin: 0 auto;
+  transition: all 0.5s ease-in-out;
+}
+
+.article_img:hover {
+  transform: scale(1.1);
 }
 
 .button-category {
@@ -171,6 +178,7 @@ header {
   box-shadow: 0 1px 3px 1px #dfe1e6;
   background-color: white;
   place-self: center;
+  overflow: hidden;
 }
 
 .button-project,
@@ -275,7 +283,8 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url("../images/contact\ form\ shapes-mobile.png") no-repeat, url("../images/Contact\ me.png");
+  background: url("../images/contact\ form\ shapes-mobile.png") no-repeat,
+    url("../images/Contact\ me.png");
   background-attachment: scroll;
   background-size: cover;
   padding: 50px 0;
@@ -501,11 +510,14 @@ h4 {
     column-gap: 15px;
     justify-content: center;
     justify-items: center;
+    overflow: hidden;
   }
 
-  .article_img {
+  .header-works {
     height: 372px;
     width: 50%;
+    border-radius: 8px;
+    overflow: hidden;
   }
 
   .div-works-reverse {
