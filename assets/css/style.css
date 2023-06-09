@@ -114,7 +114,8 @@ header {
   padding: 0;
 }
 
-.btn, .button-category {
+.btn,
+.button-category {
   transition: all 1s ease-in-out;
 }
 
@@ -122,7 +123,16 @@ header {
   transform: scale(1.2);
 }
 
-.button-category:hover{
+.button-category {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  color: #6070ff;
+  background-color: #ebebff;
+  font-size: 12px;
+}
+
+.button-category:hover {
   transform: scale(1.05);
 }
 
@@ -158,15 +168,6 @@ header {
 
 .article_img:hover {
   transform: scale(1.1);
-}
-
-.button-category {
-  padding: 10px 15px;
-  border: none;
-  border-radius: 10px;
-  color: #6070ff;
-  background-color: #ebebff;
-  font-size: 12px;
 }
 
 .li-color {
@@ -287,8 +288,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url("../images/contact\ form\ shapes-mobile.png") no-repeat,
-    url("../images/Contact\ me.png");
+  background: url("../images/contact\ form\ shapes-mobile.png") no-repeat, url("../images/Contact\ me.png");
   background-attachment: scroll;
   background-size: cover;
   padding: 50px 0;
