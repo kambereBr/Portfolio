@@ -4,11 +4,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
   background-color: #fbf8f8;
-  overflow-x: hidden;
 }
 
 .main-section {
@@ -42,6 +42,10 @@ ul > li > a {
   line-height: 20px;
   text-align: center;
   color: #344563;
+}
+
+li {
+  list-style: none;
 }
 
 header {
@@ -87,6 +91,7 @@ header {
 .social-media-icons {
   display: flex;
   justify-content: flex-start;
+  margin: 16px 0;
 }
 
 .social-media-icons > ul {
@@ -99,6 +104,13 @@ header {
   margin-top: 5px;
 }
 
+.product-categories {
+  margin: 8px 0;
+}
+
+.product-categories li:last-child {
+  display: none;
+}
 .product-categories > li {
   padding: 0;
 }
@@ -142,7 +154,6 @@ header {
   justify-content: center;
   width: 95%;
   margin: 0 auto;
-  height: 372px;
 }
 
 .article_img {
@@ -160,13 +171,13 @@ header {
 }
 
 .li-color {
-  color: #344563;
+  color: #344563 !important;
 }
 
 .div-works {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 90%;
   border-radius: 20px;
   padding: 10px 10px 18px 10px;
   box-shadow: 0 1px 3px 1px #dfe1e6;
@@ -201,6 +212,10 @@ header {
   background-image: url(../images/Base\ about\ my\ self.svg);
   background-size: 110%;
   background-attachment: scroll;
+  margin: 77px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 .about-header {
@@ -214,19 +229,18 @@ h2,
 }
 
 .div-description-about > h2 {
-  width: 327px;
-  font-family: "Poppins", sans-serif;
+  height: auto;
   font-style: normal;
   font-size: 40px;
   line-height: 40px;
-  display: flex;
-  align-items: center;
   color: #172b4d;
-  margin: 25px;
+  text-align: center;
+  margin: 16px 0;
 }
 
 .languages {
   font-size: 20px;
+  padding: 0 16px;
 }
 
 .li-categories > div {
@@ -238,7 +252,7 @@ h2,
   width: 300px;
 }
 
-.languages > ul {
+/* .languages > ul {
   display: flex;
   flex-direction: column;
   padding: 0;
@@ -248,7 +262,7 @@ h2,
 .languages > ul > li {
   padding: 0;
   margin-left: 25px;
-}
+} */
 
 .languages-items {
   display: flex;
@@ -262,6 +276,12 @@ h2,
 
 .languages-items-li {
   padding: 0;
+  background-color: #f7f7f9;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  height: 120px;
 }
 
 .li-categories > ul {
@@ -275,7 +295,8 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url("../images/contact\ form\ shapes-mobile.png") no-repeat, url("../images/Contact\ me.png");
+  background: url("../images/contact\ form\ shapes-mobile.png") no-repeat,
+    url("../images/Contact\ me.png");
   background-attachment: scroll;
   background-size: cover;
   padding: 50px 0;
@@ -358,9 +379,8 @@ textarea {
 
 .product-details {
   color: #344563;
-  font-family: "Poppins", sans-serif;
-  width: 80%;
-  margin: 30px;
+  font-size: 15px;
+  margin: 8px 0;
 }
 
 .button-project:enabled,
@@ -394,8 +414,15 @@ textarea {
 
 .product-title {
   color: #091e42;
+  font-size: 32px;
+  line-height: 44px;
+  margin: 8px 0;
 }
 
+.product-info {
+  color: #7a869a !important;
+  font-weight: 600;
+}
 h4 {
   font-family: "Poppins", sans-serif;
   color: #344563;
@@ -415,10 +442,8 @@ h4 {
 }
 
 .about-text {
-  width: 95%;
   color: #344563;
   font-family: "Poppins", sans-serif;
-  margin: 25px;
 }
 
 .contactme {
@@ -434,10 +459,44 @@ h4 {
 }
 
 .div-connect2 {
-  padding-left: 25px;
+  margin-top: 16px;
+}
+
+.div-description-about {
+  display: flex;
+  flex-direction: column;
+  padding: 0 16px;
+}
+
+.languages-module {
+  border-bottom: 2px solid #dfe1e6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+  margin: 16px 0;
+}
+
+.ul-languages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.languages-items-li > img {
+  margin-left: 10px;
+}
+
+.languages-title {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 0;
 }
 
 @media screen and (min-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
   .header-links-phone {
     display: none;
   }
@@ -480,6 +539,10 @@ h4 {
     color: #344563;
   }
 
+  .div-description-about {
+    flex: 0.4;
+  }
+
   .div-description {
     margin: 0 auto;
     width: 60%;
@@ -517,23 +580,16 @@ h4 {
   .about-my-self {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: center;
+    gap: 36px;
     background-image: url(../images/about\ myself\ -\ background-\ shape-\ desktop.svg);
     background-size: 100%;
     background-attachment: scroll;
-  }
-
-  .div-description-about {
-    width: 47%;
-    align-items: flex-start;
-    justify-content: flex-start;
-    display: flex;
-    flex-direction: column;
+    padding: 5vh 8vw;
   }
 
   .div-connect2 {
     display: flex;
-    width: 60%;
     flex-direction: column;
     row-gap: 13px;
     padding-left: 25px !important;
@@ -543,23 +599,24 @@ h4 {
     color: #7f8cff;
   }
 
-  .languages-items {
-    flex-direction: column;
-    width: 65px;
-  }
-
   .li-categories > ul {
     flex-direction: row;
     column-gap: 10px;
   }
 
   .languages {
-    float: right;
-    position: relative;
-    right: -50%;
-    top: -361px;
-    width: 100%;
-    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 0.6;
+    padding: 0 10px;
+  }
+
+  .ul-languages {
+    flex-direction: row;
+    justify-content: start;
+    gap: 12px;
+    margin: 16px 0;
   }
 
   footer {
@@ -584,8 +641,14 @@ h4 {
   }
 
   .languages-items-li {
-    width: 100px !important;
-    background-color: #f7f7f9;
-    border-radius: 10px;
+    width: 120px !important;
+    display: block;
+  }
+  .languages-items-li p {
+    padding: 0 12px 12px;
+    font-size: 15px;
+  }
+  .languages-items-li img {
+    padding: 12px;
   }
 }
