@@ -20,6 +20,10 @@ body {
   background-repeat: no-repeat;
 }
 
+li {
+  list-style: none;
+}
+
 ul > li {
   list-style: none;
   padding-left: 15px;
@@ -42,10 +46,6 @@ ul > li > a {
   line-height: 20px;
   text-align: center;
   color: #344563;
-}
-
-li {
-  list-style: none;
 }
 
 header {
@@ -104,6 +104,9 @@ header {
 }
 
 .product-categories {
+  display: flex;
+  column-gap: 3px;
+  padding: 0;
   margin: 8px 0;
 }
 
@@ -129,12 +132,6 @@ header {
 .btn:hover {
   width: 150%;
   height: 150%;
-}
-
-.product-categories {
-  display: flex;
-  column-gap: 3px;
-  padding: 0;
 }
 
 .type_dev {
@@ -278,8 +275,7 @@ footer {
   flex-direction: column;
   align-items: center;
   border-top-left-radius: 50px;
-  background: url("../images/contact\ form\ shapes-mobile.png") no-repeat,
-    url("../images/Contact\ me.png");
+  background: url("../images/contact\ form\ shapes-mobile.png") no-repeat, url("../images/Contact\ me.png");
   background-attachment: scroll;
   background-size: cover;
   padding: 50px 0;
@@ -405,6 +401,7 @@ textarea {
   color: #7a869a !important;
   font-weight: 600;
 }
+
 h4 {
   font-family: "Poppins", sans-serif;
   color: #344563;
@@ -466,6 +463,7 @@ h4 {
   justify-content: center;
   gap: 20px;
 }
+
 .languages-items-li > img {
   margin-left: 10px;
 }
@@ -486,6 +484,7 @@ h4 {
   body {
     overflow-x: hidden;
   }
+
   .header-links-phone {
     display: none;
   }
@@ -632,10 +631,12 @@ h4 {
     width: 120px !important;
     display: block;
   }
+
   .languages-items-li p {
     padding: 0 12px 12px;
     font-size: 15px;
   }
+
   .languages-items-li img {
     padding: 12px;
   }
