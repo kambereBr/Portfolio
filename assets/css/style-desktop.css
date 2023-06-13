@@ -98,7 +98,7 @@
     row-gap: 13px;
   }
 
-  .div-connect2 > h4 {
+  .div-connect2 > h3 {
     color: var(--blue-text);
     font-size: 14px;
   }
@@ -163,8 +163,8 @@
     display: inline;
   }
 
-  .languages-title > h4,
-  .languages-module > h4 {
+  .languages-title > h3,
+  .languages-module > h3 {
     font-size: 16px;
     font-weight: 500;
   }

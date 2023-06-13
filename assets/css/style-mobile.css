@@ -1,11 +1,11 @@
 :root {
-  --blue: #475AFF;
-  --blue-text: #4D5EFF;
+  --blue: #475aff;
+  --blue-text: #4d5eff;
+  --blue-work-skills-text-color: #3d51ff;
   --text-content-color: #344563;
   --button-color: #396df2;
   --gray-text-color: #677389;
-  --smoke-contactme-color: #EBEBFF;
-
+  --smoke-contactme-color: #ebebff;
 }
 
 ul > li > a {
@@ -130,7 +130,7 @@ header {
   padding: 6px 6px;
   border: none;
   border-radius: 10px;
-  color: var(--blue);
+  color: var(--blue-work-skills-text-color);
   background-color: #ebebff;
   font-size: 12px;
 }
@@ -375,12 +375,12 @@ textarea {
   font-weight: 600;
 }
 
-h4 {
+h3 {
   font-family: "Poppins", sans-serif;
   color: var(--text-content-color);
 }
 
-.div-connect > h4 {
+.div-connect > h3 {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-size: 14px;
