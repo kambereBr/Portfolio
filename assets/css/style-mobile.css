@@ -5,7 +5,7 @@
   --text-content-color: #344563;
   --button-color: #396df2;
   --gray-text-color: #677389;
-  --smoke-contactme-color: #ebebff;
+  --smoke-contactme-color: #fafaff;
 }
 
 ul > li > a {
@@ -157,7 +157,7 @@ header {
   padding: 8px 8px;
   font-size: 17px;
   background: none;
-  color: var(--button-color);
+  color: var(--blue-text);
   font-weight: 500;
   width: fit-content;
   margin-top: 10px;
