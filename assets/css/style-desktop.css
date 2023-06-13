@@ -1,0 +1,180 @@
+@media screen and (min-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .header-links-phone {
+    display: none;
+  }
+
+  .header-links-desktop {
+    display: grid;
+  }
+
+  .header-links-desktop > ul {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    align-content: center;
+  }
+
+  section[class="main-section"] {
+    display: flex;
+    flex-direction: column;
+    background: url(../images/Header-bg.svg) no-repeat;
+    background-attachment: scroll;
+    background-size: 100%;
+    padding: 24px;
+    padding-bottom: 88px;
+    border-bottom: #dfe1e6 1px solid;
+    border-radius: 0 0 0 111px;
+    margin-bottom: 102px;
+  }
+
+  .main-header {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .div-description > p {
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--text-content-color);
+  }
+
+  .div-description-about {
+    flex: 0.4;
+  }
+
+  .div-description {
+    margin: 0 auto;
+    width: 70%;
+  }
+
+  .div-connect {
+    width: 60%;
+  }
+
+  .div-works {
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    border-radius: 20px;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 0 1px 3px 1px #dfe1e6;
+    background-color: white;
+    column-gap: 15px;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .article_img {
+    width: 50%;
+  }
+
+  .div-works-reverse {
+    flex-direction: row-reverse;
+    padding: 10px 10px 10px 20px;
+    box-sizing: border-box;
+  }
+
+  .about-my-self {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 36px;
+    background-image: url(../images/about\ myself\ -\ background-\ shape-\ desktop.svg);
+    background-size: 100%;
+    background-attachment: scroll;
+    padding: 5vh 8vw;
+    width: 100%;
+  }
+
+  .div-connect2 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 13px;
+  }
+
+  .div-connect2 > h4 {
+    color: var(--blue-text);
+    font-size: 14px;
+  }
+
+  .li-categories > ul {
+    flex-direction: row;
+    column-gap: 10px;
+  }
+
+  .languages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 0.6;
+    padding: 0 10px;
+    width: 50%;
+  }
+
+  .ul-languages {
+    flex-direction: row;
+    justify-content: start;
+    gap: 12px;
+    margin: 16px 0;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(../images/contact\ form\ background\ shapes.svg) no-repeat;
+    background-color: var(--blue);
+    background-attachment: scroll;
+    background-size: contain;
+    height: 100vh;
+    border-top-left-radius: 70px;
+  }
+
+  .contactme {
+    padding: 0 25vw;
+  }
+
+  .form-ul > li {
+    text-align: center;
+  }
+
+  .languages-items-li {
+    width: 120px !important;
+    display: block;
+  }
+
+  .languages-items-li p {
+    padding: 0 12px 12px;
+    font-size: 15px;
+  }
+
+  .languages-items-li img {
+    padding: 12px;
+  }
+
+  .product-categories li:last-child {
+    display: inline;
+  }
+
+  .languages-title > h4,
+  .languages-module > h4 {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .input-form {
+    border-radius: 2px;
+    height: 38px;
+  }
+
+  textarea {
+    height: 150px !important;
+  }
+}
