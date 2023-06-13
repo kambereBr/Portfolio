@@ -1,8 +1,11 @@
 :root {
-  --blue: #6070ff;
-  --blue-text: #7f8cff;
+  --blue: #475AFF;
+  --blue-text: #4D5EFF;
   --text-content-color: #344563;
   --button-color: #396df2;
+  --gray-text-color: #677389;
+  --smoke-contactme-color: #EBEBFF;
+
 }
 
 ul > li > a {
@@ -87,7 +90,7 @@ header {
 .type_dev > li {
   padding: 0;
   font-size: 13px;
-  color: #7a869a;
+  color: var(--gray-text-color);
   font-weight: bold;
 }
 
@@ -274,7 +277,7 @@ footer {
 }
 
 .contactme > p {
-  color: white;
+  color: var(--smoke-contactme-color);
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   text-align: center;
@@ -368,7 +371,7 @@ textarea {
 }
 
 .product-info {
-  color: #7a869a !important;
+  color: var(--gray-text-color) !important;
   font-weight: 600;
 }
 
