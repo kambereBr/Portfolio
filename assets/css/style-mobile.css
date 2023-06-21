@@ -459,12 +459,13 @@ h4 {
 .web-nav img {
   margin-left: 85%;
   margin-top: 10%;
+  width: 18px;
 }
 
 .web-nav ul {
   display: flex;
   flex-direction: column;
-  margin-top: 76px;
+  margin-top: 15px;
   margin-left: 28px;
 }
 
