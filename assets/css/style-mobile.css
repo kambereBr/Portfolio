@@ -245,7 +245,9 @@ footer {
   flex-direction: column;
   align-items: center;
   border-top-left-radius: 50px;
-  background: url("../images/contact\ form\ shapes-mobile.png") no-repeat, url("../images/Contact\ me.png");
+  background:
+    url("../images/contact\ form\ shapes-mobile.png") no-repeat,
+    url("../images/Contact\ me.png");
   background-attachment: scroll;
   background-size: cover;
   padding: 50px 0;
@@ -442,6 +444,45 @@ h4 {
   display: flex;
   justify-content: space-between;
   margin: 20px 0;
+}
+
+.web-nav {
+  display: none;
+  background: rgba(96, 112, 255, 0.88);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  margin-left: -15px;
+  position: fixed;
+}
+
+.web-nav img {
+  margin-left: 85%;
+  margin-top: 10%;
+  width: 18px;
+}
+
+.web-nav ul {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  margin-left: 28px;
+}
+
+.web-nav ul li {
+  list-style: none;
+  padding-bottom: 40px;
+}
+
+.web-nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  position: relative;
 }
 
 @media screen and (max-width: 298px) {
