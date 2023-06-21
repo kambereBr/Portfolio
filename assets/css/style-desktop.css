@@ -177,4 +177,8 @@
   textarea {
     height: 150px !important;
   }
+
+  .web-nav {
+    display: none;
+  }
 }
