@@ -5,7 +5,7 @@
   --button-color: #396df2;
 }
 
-ul>li>a {
+ul > li > a {
   text-decoration: none;
   width: 62px;
   height: 20px;
@@ -48,7 +48,7 @@ header {
   flex-grow: 0;
 }
 
-.div-description>p {
+.div-description > p {
   width: 100%;
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -63,7 +63,7 @@ header {
   justify-content: flex-start;
 }
 
-.social-media-icons>ul {
+.social-media-icons > ul {
   display: flex;
   justify-content: space-around;
   align-items: baseline;
@@ -80,18 +80,18 @@ header {
   margin: 8px 0;
 }
 
-.product-categories>li {
+.product-categories > li {
   padding: 0;
 }
 
-.type_dev>li {
+.type_dev > li {
   padding: 0;
   font-size: 13px;
   color: #7a869a;
   font-weight: bold;
 }
 
-.social-media-icons>ul>li {
+.social-media-icons > ul > li {
   padding: 0;
 }
 
@@ -190,7 +190,7 @@ h2,
   font-family: "Poppins", sans-serif;
 }
 
-.div-description-about>h2 {
+.div-description-about > h2 {
   height: auto;
   font-style: normal;
   font-size: 30px;
@@ -204,7 +204,7 @@ h2,
   padding: 0 16px;
 }
 
-.li-categories>div {
+.li-categories > div {
   display: flex;
   justify-content: space-between;
   margin: 15px;
@@ -233,7 +233,7 @@ h2,
   height: 120px;
 }
 
-.li-categories>ul {
+.li-categories > ul {
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -245,7 +245,8 @@ footer {
   flex-direction: column;
   align-items: center;
   border-top-left-radius: 50px;
-  background: url("../images/contact\ form\ shapes-mobile.png") no-repeat, url("../images/Contact\ me.png");
+  background: url("../images/contact\ form\ shapes-mobile.png") no-repeat,
+    url("../images/Contact\ me.png");
   background-attachment: scroll;
   background-size: cover;
   padding: 50px 0;
@@ -260,7 +261,7 @@ footer {
   width: 100%;
 }
 
-.form-contact>ul {
+.form-contact > ul {
   width: 80%;
 }
 
@@ -273,7 +274,7 @@ footer {
   margin-bottom: 0;
 }
 
-.contactme>p {
+.contactme > p {
   color: white;
   font-family: "Poppins", sans-serif;
   font-size: 14px;
@@ -315,7 +316,7 @@ textarea {
   outline: none;
 }
 
-.div-description>h2 {
+.div-description > h2 {
   width: 100%;
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -377,7 +378,7 @@ h4 {
   color: var(--text-content-color);
 }
 
-.div-connect>h4 {
+.div-connect > h4 {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-size: 14px;
@@ -434,7 +435,7 @@ h4 {
   gap: 20px;
 }
 
-.languages-items-li>img {
+.languages-items-li > img {
   margin-left: 10px;
 }
 
@@ -446,13 +447,12 @@ h4 {
 
 .web-nav {
   display: none;
-  background: #6070FF;
-  backdrop-filter: blur(5px);
+  background: rgba(96, 112, 255, 0.88);
   position: absolute;
   height: 100%;
   width: 100%;
   top: 0;
-  mix-blend-mode: multiply;
+  margin-left: -15px;
   position: fixed;
 }
 
@@ -464,21 +464,19 @@ h4 {
 .web-nav ul {
   display: flex;
   flex-direction: column;
-  margin-top: 106px;
+  margin-top: 76px;
   margin-left: 28px;
 }
 
 .web-nav ul li {
   list-style: none;
   padding-bottom: 40px;
-  opacity: 1;
-
 }
 
 .web-nav ul li a {
   text-decoration: none;
   color: #fff;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
