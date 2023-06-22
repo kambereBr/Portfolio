@@ -181,4 +181,74 @@
   .web-nav {
     display: none;
   }
+
+  /* Popup design */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%;
+    border-radius: 20px;
+  }
+
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .popup-image {
+    width: 100% !important;
+  }
+
+  .popup-position {
+    margin-bottom: 10px;
+  }
+
+  .popup-action-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    column-gap: 5px;
+  }
+
+  .icon-popup {
+    width: 18px;
+    height: 18px;
+    margin-left: 5px;
+  }
+
+  .column-1 {
+    float: left;
+    width: 55%;
+  }
+
+  .column-2 {
+    float: left;
+    width: 45%;
+    padding-left: 15px;
+  }
+
+  .article_text {
+    display: table;
+    clear: both;
+  }
 }
