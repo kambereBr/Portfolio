@@ -247,8 +247,7 @@ footer {
   flex-direction: column;
   align-items: center;
   border-top-left-radius: 50px;
-  background: url("../images/contact\ form\ shapes-mobile.png") no-repeat,
-    url("../images/Contact\ me.png");
+  background: url("../images/contact\ form\ shapes-mobile.png") no-repeat, url("../images/Contact\ me.png");
   background-attachment: scroll;
   background-size: cover;
   padding: 50px 0;
