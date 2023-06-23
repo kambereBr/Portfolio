@@ -36,76 +36,72 @@ for (let i = 0; i < linkMenu.length; i += 1) {
 }
 
 // main page setup
-const tonicProject = {
-  name: 'Tonic',
-  description:
-    'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-  image: 'assets/images/Snapshoot Portfolio-1.png',
-  technologies: ['html', 'css', 'javascript'],
-  items: [
-    'CANOPY',
-    'assets/images/Counter.svg',
-    'Back End Dev',
-    'assets/images/Counter.svg',
-    '2015',
-  ],
-  liveVersionLink: 'https://kamberebr.github.io/Portfolio/',
-  sourceLink: 'https://github.com/kambereBr/Portfolio.git',
-};
-const multiPostProject = {
-  name: 'Multi-Post Stories',
-  description:
-    'Experimental content creation feature that allows users to add to an existant story over the course of a day without spamming their friends.',
-  image: 'assets/images/basket2015.png',
-  technologies: ['html', 'Ruby on rails', 'css', 'javascript'],
-  items: [
-    'FACEBOOK',
-    'assets/images/Counter.svg',
-    'Full Stack Dev',
-    'assets/images/Counter.svg',
-    '2015',
-  ],
-  liveVersionLink: 'https://kamberebr.github.io/Portfolio/',
-  sourceLink: 'https://github.com/kambereBr/Portfolio.git',
-};
-const facebookProject = {
-  name: 'Facebook 360',
-  description:
-    "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and video on Gear VR.",
-  image: 'assets/images/Snapshoot Portfolio-4.png',
-  technologies: ['html', 'Ruby on rails', 'css', 'javascript'],
-  items: [
-    'FACEBOOK',
-    'assets/images/Counter.svg',
-    'Full Stack Dev',
-    'assets/images/Counter.svg',
-    '2015',
-  ],
-  liveVersionLink: 'https://kamberebr.github.io/Portfolio/',
-  sourceLink: 'https://github.com/kambereBr/Portfolio.git',
-};
-const uberNavigationProject = {
-  name: 'Uber navigation',
-  description:
-    'A smart assistant to make driving more safe, efficient and fun by unlocking your most expensive computer, your car.',
-  image: 'assets/images/Snapshoot Portfolio.png',
-  technologies: ['html', 'Ruby on rails', 'css', 'javascript'],
-  items: [
-    'Uber',
-    'assets/images/Counter.svg',
-    'Lead Developer',
-    'assets/images/Counter.svg',
-    '2018',
-  ],
-  liveVersionLink: 'https://kamberebr.github.io/Portfolio/',
-  sourceLink: 'https://github.com/kambereBr/Portfolio.git',
-};
 /* adding all project's object in the main project section */
 const projectSectionData = [
-  tonicProject,
-  multiPostProject,
-  facebookProject,
-  uberNavigationProject,
+  {
+    name: 'Tonic',
+    description:
+    'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    image: 'assets/images/Snapshoot Portfolio-1.png',
+    technologies: ['html', 'css', 'javascript'],
+    items: [
+      'CANOPY',
+      'assets/images/Counter.svg',
+      'Back End Dev',
+      'assets/images/Counter.svg',
+      '2015',
+    ],
+    liveVersionLink: 'https://kamberebr.github.io/Portfolio/',
+    sourceLink: 'https://github.com/kambereBr/Portfolio.git',
+  },
+  {
+    name: 'Multi-Post Stories',
+    description:
+    'Experimental content creation feature that allows users to add to an existant story over the course of a day without spamming their friends.',
+    image: 'assets/images/basket2015.png',
+    technologies: ['html', 'Ruby on rails', 'css', 'javascript'],
+    items: [
+      'FACEBOOK',
+      'assets/images/Counter.svg',
+      'Full Stack Dev',
+      'assets/images/Counter.svg',
+      '2015',
+    ],
+    liveVersionLink: 'https://kamberebr.github.io/Portfolio/',
+    sourceLink: 'https://github.com/kambereBr/Portfolio.git',
+  },
+  {
+    name: 'Facebook 360',
+    description:
+    "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and video on Gear VR.",
+    image: 'assets/images/Snapshoot Portfolio-4.png',
+    technologies: ['html', 'Ruby on rails', 'css', 'javascript'],
+    items: [
+      'FACEBOOK',
+      'assets/images/Counter.svg',
+      'Full Stack Dev',
+      'assets/images/Counter.svg',
+      '2015',
+    ],
+    liveVersionLink: 'https://kamberebr.github.io/Portfolio/',
+    sourceLink: 'https://github.com/kambereBr/Portfolio.git',
+  },
+  {
+    name: 'Uber navigation',
+    description:
+    'A smart assistant to make driving more safe, efficient and fun by unlocking your most expensive computer, your car.',
+    image: 'assets/images/Snapshoot Portfolio.png',
+    technologies: ['html', 'Ruby on rails', 'css', 'javascript'],
+    items: [
+      'Uber',
+      'assets/images/Counter.svg',
+      'Lead Developer',
+      'assets/images/Counter.svg',
+      '2018',
+    ],
+    liveVersionLink: 'https://kamberebr.github.io/Portfolio/',
+    sourceLink: 'https://github.com/kambereBr/Portfolio.git',
+  },
 ];
 
 /* FUNCTIONS SECTION */
