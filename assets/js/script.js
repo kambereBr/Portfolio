@@ -248,6 +248,8 @@ buildProjectCard(projectSectionData);
 
 /* FORM VALIDATION SECTION */
 const userEmail = document.getElementById('user_email');
+const userName = document.getElementById('user_name');
+const userMessage = document.getElementById('user_message');
 const formContact = document.getElementById('form-contact');
 const errMsg = document.querySelector('small');
 
@@ -256,5 +258,31 @@ formContact.addEventListener('submit', (e) => {
   if (regex.test(userEmail.value)) {
     errMsg.innerText = 'Please enter only lower case valid email';
     e.preventDefault();
+  }
+});
+
+/* FORM LOCAL STORAGE */
+const userFormData = {
+  name: '',
+  email: '',
+  message: '',
+};
+function storeLocalData() {
+  userFormData.email = userEmail.value;
+  userFormData.name = userName.value;
+  userFormData.message = userMessage.value;
+  window.localStorage.setItem('userData', JSON.stringify(userFormData));
+}
+
+userEmail.addEventListener('input', storeLocalData);
+userName.addEventListener('input', storeLocalData);
+userMessage.addEventListener('input', storeLocalData);
+
+document.addEventListener('DOMContentLoaded', () => {
+  const storedData = JSON.parse(localStorage.getItem('userData'));
+  if (storedData) {
+    userEmail.value = storedData.email ? storedData.email : '';
+    userName.value = storedData.name ? storedData.name : '';
+    userMessage.value = storedData.message ? storedData.message : '';
   }
 });
