@@ -41,7 +41,7 @@ const projectSectionData = [
   {
     name: 'Tonic',
     description:
-    'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     image: 'assets/images/Snapshoot Portfolio-1.png',
     technologies: ['html', 'css', 'javascript'],
     items: [
@@ -57,7 +57,7 @@ const projectSectionData = [
   {
     name: 'Multi-Post Stories',
     description:
-    'Experimental content creation feature that allows users to add to an existant story over the course of a day without spamming their friends.',
+      'Experimental content creation feature that allows users to add to an existant story over the course of a day without spamming their friends.',
     image: 'assets/images/basket2015.png',
     technologies: ['html', 'Ruby on rails', 'css', 'javascript'],
     items: [
@@ -73,7 +73,7 @@ const projectSectionData = [
   {
     name: 'Facebook 360',
     description:
-    "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and video on Gear VR.",
+      "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and video on Gear VR.",
     image: 'assets/images/Snapshoot Portfolio-4.png',
     technologies: ['html', 'Ruby on rails', 'css', 'javascript'],
     items: [
@@ -89,7 +89,7 @@ const projectSectionData = [
   {
     name: 'Uber navigation',
     description:
-    'A smart assistant to make driving more safe, efficient and fun by unlocking your most expensive computer, your car.',
+      'A smart assistant to make driving more safe, efficient and fun by unlocking your most expensive computer, your car.',
     image: 'assets/images/Snapshoot Portfolio.png',
     technologies: ['html', 'Ruby on rails', 'css', 'javascript'],
     items: [
@@ -245,3 +245,16 @@ function buildProjectCard(data) {
 /* FUNCTIONS SECTION END */
 
 buildProjectCard(projectSectionData);
+
+/* FORM VALIDATION SECTION */
+const userEmail = document.getElementById('user_email');
+const formContact = document.getElementById('form-contact');
+const errMsg = document.querySelector('small');
+
+formContact.addEventListener('submit', (e) => {
+  const regex = /[A-Z]/;
+  if (regex.test(userEmail.value)) {
+    errMsg.innerText = 'Please enter only lower case valid email';
+    e.preventDefault();
+  }
+});

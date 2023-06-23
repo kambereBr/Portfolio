@@ -243,6 +243,7 @@
       </p>
       <form
         class="form-contact"
+        id="form-contact"
         action="https://formspree.io/f/xwkjdrpo"
         method="post"
       >
@@ -279,8 +280,13 @@
               class="input-form"
             ></textarea>
           </li>
-          <li>
-            <button type="submit" class="btn-submit">Get In touch</button>
+          <li class="btn-submit-bloc">
+            <div class="btn-submit-left-bloc btn-bloc">
+              <button type="submit" class="btn-submit">Get In touch</button>
+            </div>
+            <div class="btn-submit-right-bloc btn-bloc">
+              <small class="error-message"></small>
+            </div>
           </li>
         </ul>
       </form>
