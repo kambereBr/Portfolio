@@ -34,7 +34,9 @@
 
         <ul>
           <li><a href="#main-section" class="menu-link">Portfolio</a></li>
-          <li><a href="#about-my-self main-section" class="menu-link">About</a></li>
+          <li>
+            <a href="#about-my-self main-section" class="menu-link">About</a>
+          </li>
           <li><a href="#contactme" class="menu-link">Contact</a></li>
         </ul>
       </nav>
@@ -99,115 +101,51 @@
       </div>
     </section>
     <section class="works-section">
-      <article class="div-works">
-        <img
-          class="article_img"
-          src="assets/images/Snapshoot Portfolio-1.png"
-          alt="Product 1"
-        />
-        <div class="article_text">
-          <h2 class="product-title">Tonic</h2>
-          <ul class="type_dev">
-            <li class="li-color">CANOPY</li>
-            <li><img src="assets/images/Counter.svg" alt="Counter image" /></li>
-            <li class="product-info">Back End Dev</li>
-            <li><img src="assets/images/Counter.svg" alt="Counter image" /></li>
-            <li class="product-info">2015</li>
-          </ul>
-          <p class="product-details">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
-          </p>
-          <ul class="product-categories">
-            <li><button class="button-category">HTML</button></li>
-            <li><button class="button-category">CSS</button></li>
-            <li><button class="button-category">JavaScript</button></li>
-          </ul>
-          <button class="button-project">See project</button>
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2 class="product-title popup-title"></h2>
+          <div class="popup-position"></div>
+          <article class="div-workss">
+            <img
+              class="article_img popup-image"
+              src="assets/images/basket2015.png"
+              alt=""
+            />
+            <div class="article_text">
+              <div class="column-1">
+                <p class="product-details product-details-popup"></p>
+              </div>
+              <div class="column-2">
+                <ul class="product-categories popup-technologies"></ul>
+                <div class="line">
+                  <hr>
+                </div>
+                <div class="popup-x-line"></div>
+                <div class="popup-action-div">
+                  <button class="button-project popup-btn-link see-live-btn">
+                    See live
+                    <img
+                      class="icon-popup"
+                      src="assets/images/Icon-Export.svg"
+                      alt="export image"
+                    />
+                  </button>
+                  <button class="button-project popup-btn-link see-github-btn">
+                    See Source
+                    <img
+                      class="icon-popup"
+                      src="assets/images/github-in-button.svg"
+                      alt="github image"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
         </div>
-      </article>
-      <article class="div-works div-works-reverse">
-        <img class="article_img" src="assets/images/basket2015.png" alt="" />
-        <div class="article_text">
-          <h2 class="product-title">Multi-Post Stories</h2>
-          <ul class="type_dev">
-            <li class="li-color">FACEBOOK</li>
-            <li><img src="assets/images/Counter.svg" alt="Counter image" /></li>
-            <li class="product-info">Full Stack Dev</li>
-            <li><img src="assets/images/Counter.svg" alt="Counter image" /></li>
-            <li class="product-info">2015</li>
-          </ul>
-          <p class="product-details">
-            Experimental content creation feature that allows users to add to an
-            existing story over the course of a day without spamming their
-            friends.
-          </p>
-          <ul class="product-categories">
-            <li><button class="button-category">html</button></li>
-            <li><button class="button-category">Ruby on rails</button></li>
-            <li><button class="button-category">css</button></li>
-            <li><button class="button-category">javaScript</button></li>
-          </ul>
-          <button class="button-project">See project</button>
-        </div>
-      </article>
-      <article class="div-works">
-        <img
-          class="article_img"
-          src="assets/images/Snapshoot Portfolio-4.png"
-          alt=""
-        />
-        <div class="article_text">
-          <h2 class="product-title">Facebook 360</h2>
-          <ul class="type_dev">
-            <li class="li-color">FACEBOOK</li>
-            <li><img src="assets/images/Counter.svg" alt="Counter image" /></li>
-            <li class="product-info">Back End Dev</li>
-            <li><img src="assets/images/Counter.svg" alt="Counter image" /></li>
-            <li class="product-info">2015</li>
-          </ul>
-          <p class="product-details">
-            Exploring the future of media in Facebook's first Virtual Reality
-            app; a place to discover and enjoy 360 photos and videos on Gear VR.
-          </p>
-          <ul class="product-categories">
-            <li><button class="button-category">HTML</button></li>
-            <li><button class="button-category">CSS</button></li>
-            <li><button class="button-category">JavaScript</button></li>
-          </ul>
-          <button class="button-project">See project</button>
-        </div>
-      </article>
-      <article class="div-works div-works-reverse">
-        <img
-          class="article_img"
-          src="assets/images/Snapshoot Portfolio.png"
-          alt=""
-        />
-        <div class="article_text">
-          <h2 class="product-title">Uber Navigation</h2>
-          <ul class="type_dev">
-            <li class="li-color">Uber</li>
-            <li><img src="assets/images/Counter.svg" alt="Counter image" /></li>
-            <li>Lead Developer</li>
-            <li class="product-info">
-              <img src="assets/images/Counter.svg" alt="Counter image" />
-            </li>
-            <li class="product-info">2015</li>
-          </ul>
-          <p class="product-details">
-            A smart assistant to make driving more safe, efficient, and fun by
-            unlocking your most expensive computer: your car.
-          </p>
-          <ul class="product-categories">
-            <li><button class="button-category">html</button></li>
-            <li><button class="button-category">Ruby on rails</button></li>
-            <li><button class="button-category">css</button></li>
-            <li><button class="button-category">javaScript</button></li>
-          </ul>
-          <button class="button-project">See project</button>
-        </div>
-      </article>
+      </div>
     </section>
     <section class="about-my-self" id="about-my-self main-section">
       <div class="div-description-about">
@@ -347,7 +285,6 @@
         </ul>
       </form>
     </footer>
-
 
     <script src="./assets/js/script.js"></script>
   </body>
