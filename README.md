@@ -37,7 +37,7 @@
 <details>
   <summary>Front-end</summary>
   <ul>
-    <li><a href="https://www.w3schools.com/html/">HTML5 & CSS3</a></li>
+    <li><a href="https://www.w3schools.com/html/">HTML5, CSS3 & Javascript</a></li>
   </ul>
 </details>
 
@@ -70,31 +70,29 @@ In order to run this project you need:
 
 ### Setup
 
-Clone this repository to your desired folder: git clone git@github.com:myaccount/my-project.git
+Clone this repository to your desired folder: git clone https://github.com/kambereBr/Portfolio.git
 
 ### Install
 
 Install this project with:
 
 ```sh
-  cd my-project
-  gem install
+  Install this project with:git and npm install
+  If necessary, Setup linters by following these steps here : https://github.com/microverseinc/linters-config/tree/master/html-css-js
 ```
 
 ### Usage
 
-To run the project, execute the following command:
-
-```sh
-  rails server
-```
+To run the project, open te index.html file in the browser
 
 ### Run tests
 
 To run tests, run the following command:
 
 ```sh
-  bin/rails test test/models/article_test.rb
+  npx hint .
+  npx stylelint "**/*.{css,scss}"
+  npx eslint .
 ```
 
 ### Deployment
@@ -119,9 +117,8 @@ You can deploy this project using: github deployment process
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **User login form**
-- [ ] **Blog**
-- [ ] **FAQ**
+- [ ] **Validate contact form**
+- [ ] **Preserve data in the browser**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
