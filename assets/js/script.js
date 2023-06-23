@@ -248,6 +248,8 @@ buildProjectCard(projectSectionData);
 
 /* FORM VALIDATION SECTION */
 const userEmail = document.getElementById('user_email');
+const userName = document.getElementById('user_name');
+const userMessage = document.getElementById('user_message');
 const formContact = document.getElementById('form-contact');
 const errMsg = document.querySelector('small');
 
@@ -258,3 +260,16 @@ formContact.addEventListener('submit', (e) => {
     e.preventDefault();
   }
 });
+
+/* FORM LOCAL STORAGE */
+let userFormData = {
+  name : '',
+  email : '',
+  message : ''
+}
+function storeLocalData(){
+  userFormData.email = userEmail.value;
+  userFormData.name = userName.value;
+  userFormData.message = userMessage.value;
+  window.localStorage.setItem('userData', JSON.stringify(userFormData))
+}
