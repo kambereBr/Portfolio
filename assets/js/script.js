@@ -262,18 +262,27 @@ formContact.addEventListener('submit', (e) => {
 });
 
 /* FORM LOCAL STORAGE */
-let userFormData = {
-  name : '',
-  email : '',
-  message : ''
-}
-function storeLocalData(){
+const userFormData = {
+  name: '',
+  email: '',
+  message: '',
+};
+function storeLocalData() {
   userFormData.email = userEmail.value;
   userFormData.name = userName.value;
   userFormData.message = userMessage.value;
-  window.localStorage.setItem('userData', JSON.stringify(userFormData))
+  window.localStorage.setItem('userData', JSON.stringify(userFormData));
 }
 
 userEmail.addEventListener('input', storeLocalData);
 userName.addEventListener('input', storeLocalData);
 userMessage.addEventListener('input', storeLocalData);
+
+document.addEventListener('DOMContentLoaded', () => {
+  const storedData = JSON.parse(localStorage.getItem('userData'));
+  if (storedData) {
+    userEmail.value = storedData.email ? storedData.email : '';
+    userName.value = storedData.name ? storedData.name : '';
+    userMessage.value = storedData.message ? storedData.message : '';
+  }
+});
