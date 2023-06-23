@@ -245,3 +245,8 @@ function buildProjectCard(data) {
 /* FUNCTIONS SECTION END */
 
 buildProjectCard(projectSectionData);
+
+/* FORM VALIDATION SECTION */
+const userEmail = document.getElementById('user_email');
+const formContact = document.getElementById('form-contact');
+const errMsg = document.querySelector("small");
