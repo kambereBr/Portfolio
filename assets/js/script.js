@@ -273,3 +273,7 @@ function storeLocalData(){
   userFormData.message = userMessage.value;
   window.localStorage.setItem('userData', JSON.stringify(userFormData))
 }
+
+userEmail.addEventListener('input', storeLocalData);
+userName.addEventListener('input', storeLocalData);
+userMessage.addEventListener('input', storeLocalData);
