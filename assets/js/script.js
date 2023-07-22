@@ -52,7 +52,7 @@ const projectSectionData = [
       '2023',
     ],
     liveVersionLink: 'https://kamberebr.github.io/ToDoList/dist/',
-    sourceLink: 'https://github.com/kambereBr/Portfolio',
+    sourceLink: 'https://github.com/kambereBr/ToDoList',
   },
   {
     name: 'Tonic',
