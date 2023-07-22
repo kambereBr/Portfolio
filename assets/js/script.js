@@ -38,6 +38,22 @@ for (let i = 0; i < linkMenu.length; i += 1) {
 // main page setup
 /* adding all project's object in the main project section */
 const projectSectionData = [
+   {
+    name: 'ToDoList App',
+    description:
+      'ToDoList App is a app that allows users to record, remove and display their tasks.',
+    image: 'assets/images/screen-todolist-03.png',
+    technologies: ['html', 'css', 'javascript (ES6)', 'Babel Loader', 'WebpackDevServer'],
+    items: [
+      'ToDoList',
+      'assets/images/Counter.svg',
+      'Front End Dev',
+      'assets/images/Counter.svg',
+      '2023',
+    ],
+    liveVersionLink: 'https://kamberebr.github.io/ToDoList/dist/',
+    sourceLink: 'https://github.com/kambereBr/Portfolio',
+  },
   {
     name: 'Tonic',
     description:
