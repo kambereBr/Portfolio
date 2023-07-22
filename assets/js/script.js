@@ -199,10 +199,10 @@ function showPopupWindow(data) {
 
   // redirect either to github source or to live demo
   liveLinkBtn.addEventListener('click', () => {
-    redirectToLink('https://kamberebr.github.io/Portfolio/');
+    redirectToLink(data.liveVersionLink);
   });
   githubLinkBtn.addEventListener('click', () => {
-    redirectToLink('https://github.com/kambereBr/Portfolio.git');
+    redirectToLink(data.sourceLink);
   });
 
   // When the user clicks on <span> (x), close the modal
