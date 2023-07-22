@@ -43,7 +43,7 @@ const projectSectionData = [
     description:
       'ToDoList App is a app that allows users to record, remove and display their tasks.',
     image: 'assets/images/screen-todolist-03.png',
-    technologies: ['html', 'css', 'javascript (ES6)', 'Babel Loader', 'WebpackDevServer'],
+    technologies: ['html', 'css', 'javascript (ES6)', 'Babel Loader'],
     items: [
       'ToDoList',
       'assets/images/Counter.svg',
